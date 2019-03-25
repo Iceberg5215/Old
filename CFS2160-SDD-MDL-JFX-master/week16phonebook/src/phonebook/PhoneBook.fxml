@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="phonebook.PhoneBook">
+   <top>
+      <FlowPane alignment="CENTER" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ListView fx:id="nameLV" prefHeight="200.0" prefWidth="200.0" />
+         </children></FlowPane>
+   </top>
+   <center>
+      <FlowPane alignment="CENTER" prefHeight="200.0" prefWidth="592.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="addButton" mnemonicParsing="false" onAction="#addNewEntry" text="Add Entry" />
+            <TextField fx:id="nameTF" />
+            <TextField fx:id="numberTF" />
+         </children>
+      </FlowPane>
+   </center>
+   <bottom>
+      <FlowPane alignment="CENTER" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="getButton" mnemonicParsing="false" onAction="#getNumber" text="Get Number" />
+            <TextField fx:id="resultTF" />
+         </children></FlowPane>
+   </bottom>
+</BorderPane>

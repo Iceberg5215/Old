@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<FlowPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="801.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controllers.Snacks">
+   <children>
+      <FlowPane alignment="CENTER" prefHeight="50.0" prefWidth="295.0">
+         <children>
+            <Label text="Cinema Enterpriso | Receipt">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </FlowPane>
+      <Separator orientation="VERTICAL" />
+      <GridPane prefHeight="50.0" prefWidth="500.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="btnFilms" layoutX="10.0" layoutY="15.0" mnemonicParsing="false" onAction="#sceneChangeFilms" prefHeight="40.0" prefWidth="120.0" text="Films" GridPane.halignment="CENTER" />
+            <Button fx:id="btnSnacks" layoutX="177.0" layoutY="15.0" mnemonicParsing="false" onAction="#sceneChangeSnacks" prefHeight="40.0" prefWidth="120.0" text="Snacks" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+         </children>
+      </GridPane>
+      <AnchorPane prefHeight="450.0" prefWidth="801.0" />
+   </children>
+</FlowPane>
